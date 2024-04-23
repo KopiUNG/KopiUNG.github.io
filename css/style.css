@@ -229,14 +229,16 @@ section {
     gap: 1.5rem;
 }
 
-.about .row .image img {
+.about .row .image iframe {
     width: 100%;
     animation: aboutImage 4s linear infinite;
+
 }
 .about .row .image-profil img{
     width: 100%;
     float: right;
 }
+
 @media (max-width: 768px) {
     .row {
         flex-direction: column;
