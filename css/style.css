@@ -328,8 +328,7 @@ section {
 }
 
 .menu  .review-slider .box {
-    position: relative;
-    z-index: 0;
+
     padding: 1rem;
 }
 
@@ -585,18 +584,6 @@ section {
 
     .home .row .content h3 {
         font-size: 4rem;
-    }
-
-    .menu .box-container .box {
-        margin-left: 0;
-        margin-top: 6rem;
-        flex-flow: column;
-        text-align: center;
-    }
-
-    .menu .box-container .box img {
-        margin-left: 0;
-        margin-top: -6rem;
     }
 
     .home .row .image img {

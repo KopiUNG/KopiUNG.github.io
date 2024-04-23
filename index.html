@@ -542,28 +542,28 @@
     <script>
       // swiper
       var swiper = new Swiper(".swiper-js", {
-        spaceBetween: 20,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
-        loop: true,
-        grabCursor: true,
         autoplay: {
-          delay: 7500,
-          disableOnInteraction: false,
+          delay: 3000,
         },
         breakpoints: {
           0: {
+            spaceBetween: 10,
             slidesPerView: 2,
           },
           576: {
+            spaceBetween: 30,
             slidesPerView: 3,
           },
           768: {
+            spaceBetween: 30,
             slidesPerView: 3,
           },
           992: {
+            spaceBetween: 20,
             slidesPerView: 4, // Tampilkan 4 kolom pada ukuran layar yang lebih besar dari 992px
           },
         },
