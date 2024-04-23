@@ -1,307 +1,633 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee</title>
-
-    <!-- SWIPER -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="image/icon-logo.png" />
+    <title>KopiUNG</title>
 
     <!-- Font Awesome CDN Link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
+    />
     <!-- Custom CSS File Link  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- HEADER -->
     <header class="header">
-        <div id="menu-btn" class="fas fa-bars"></div>
+      <div id="menu-btn" class="fas fa-bars"></div>
 
-        <a href="#" class="logo">coffee <i class="fas fa-mug-hot"></i></a>
+      <a href="#" class="logo"><img src="image/logo.png" alt="" /></a>
 
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#about">about</a>
-            <a href="#menu">menu</a>
-            <a href="#review">review</a>
-            <a href="#book">book</a>
-        </nav>
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#galery">galery</a>
+        <a href="#contact">contact</a>
+      </nav>
 
-        <a href="#" class="btn">book a table</a>
+      <a href="https://maps.app.goo.gl/tNzSnwtcGxCkU1bp9" class="btn">
+        visit now</a
+      >
     </header>
 
+    <!-- whatsapp -->
+    <div id="whatsapp-button">
+      <a href="https://wa.me/6281238336149/?text=Hallo+admin" target="_blank">
+        <img src="image/whatsapp.jpg" alt="WhatsApp Icon" />
+      </a>
+    </div>
+    <!-- end whatsapp -->
+
     <!-- HOME -->
-    <section class="home" id="home">
-        <div class="row">
-            <div class="content">
+
+    <!-- Carousel -->
+    <div id="home" class="carousel slide" data-bs-ride="carousel">
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <section class="home" id="home">
+            <div class="row justify-content-around">
+              <div class="col-lg-6 col-sm-12 col-12 content">
                 <h3>fresh coffee in the morning</h3>
-                <a href="#" class="btn">buy one now</a>
+                <p>
+                  Come enjoy a cup of warm coffee while feeling nostalgia for
+                  the past and the warmth of the atmosphere
+                </p>
+              </div>
+
+              <div class="col-lg-3 col-md-12 image text-center">
+                <img
+                  src="image/coffee.png"
+                  class="main-home-image img-fluid"
+                  alt=""
+                />
+              </div>
             </div>
 
-            <div class="image">
-                <img src="image/home-img-1.png" class="main-home-image" alt="">
+            <div class="image-slider">
+              <img src="image/coffee.png" alt="" />
+              <img src="image/Coffee_Cup_Mockup_Coffee_05.png" alt="" />
+              <img src="image/food-makanan.png" alt="" />
             </div>
+          </section>
         </div>
-
-        <div class="image-slider">
-            <img src="image/home-img-1.png" alt="">
-            <img src="image/home-img-2.png" alt="">
-            <img src="image/home-img-3.png" alt="">
-        </div>
-    </section>
+      </div>
+    </div>
 
     <!-- ABOUT -->
     <section class="about" id="about">
-        <h1 class="heading">about us <span>why choose us</span></h1>
+      <h1 class="heading">about us <span>why choose us</span></h1>
 
-        <div class="row">
-            <div class="image">
-                <img src="image/about-img.png" alt="">
-            </div>
-
-            <div class="content">
-                <h3 class="title">what's make our coffee special!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum laboriosam reprehenderit ipsa id
-                    repellat odio illum, voluptas, necessitatibus assumenda adipisci. Hic, maiores iste? Excepturi illo
-                    dolore mollitia qui quia.</p>
-                <a href="#" class="btn">read more</a>
-                <div class="icons-container">
-                    <div class="icons">
-                        <img src="image/about-icon-1.png" alt="">
-                        <h3>quality coffee</h3>
-                    </div>
-                    <div class="icons">
-                        <img src="image/about-icon-2.png" alt="">
-                        <h3>our branches</h3>
-                    </div>
-                    <div class="icons">
-                        <img src="image/about-icon-3.png" alt="">
-                        <h3>free delivery</h3>
-                    </div>
-                </div>
-            </div>
+      <div class="row">
+        <div class="image image-story col-xl-6">
+          <img src="image/PGA01133.jpg" alt="" />
         </div>
+
+        <div class="content col-xl-6">
+          <h3 class="title">Our Story</h3>
+          <p>
+            KopiUNG is a business operating in the Coffee Shop sector which is
+            located at Jalan Raya Sesetan No. 65, South Denpasar District,
+            KopiUNG was founded in 2019. Where KopiUNG means coffee water. where
+            the focus is on coffee drinks. And almost all coffee raw materials
+            come from various regions in Indonesia and also various regions
+            abroad. Not only coffee, but also various types of non-coffee
+            drinks. which is intended for customers who don't really like
+            coffee. And this Coffee Shop also sells various kinds of light to
+            heavy food. And KopiUNG also has an interior design with a
+            minimalist concept using wooden materials and decoration with
+            various types of ornamental plants. which is even more of an
+            attraction.
+          </p>
+        </div>
+        <div class="content-icon col-xl-12">
+          <div class="icons-container">
+            <div class="icons">
+              <img src="image/atole_8949557.png" alt="" />
+              <h3>
+                The best recipe barista innovation challenge 2020 (nasional)
+              </h3>
+            </div>
+            <div class="icons">
+              <img src="image/barista_12092804.png" alt="" />
+              <h3>Top 10 best baristas the youth Denpasar</h3>
+            </div>
+            <div class="icons">
+              <img src="image/seminar_1900424.png" alt="" />
+              <h3>Seminar speaker at the COLABRO event</h3>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- MENU -->
     <section class="menu" id="menu">
-        <h1 class="heading">our menu <span>popular menu</span></h1>
+      <h1 class="heading">our menu <span>signature menu</span></h1>
 
-        <div class="box-container">
-            <a href="#" class="box">
-                <img src="image/menu-1.png" alt="">
-                <div class="content">
-                    <h3>our special coffee</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, sed.</p>
-                    <span>$8.99</span>
-                </div>
-            </a>
-
-            <a href="#" class="box">
-                <img src="image/menu-2.png" alt="">
-                <div class="content">
-                    <h3>our special coffee</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, fugit.</p>
-                    <span>$8.99</span>
-                </div>
-            </a>
-
-            <a href="#" class="box">
-                <img src="image/menu-3.png" alt="">
-                <div class="content">
-                    <h3>our special coffee</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, recusandae.</p>
-                    <span>$8.99</span>
-                </div>
-            </a>
-
-            <a href="#" class="box">
-                <img src="image/menu-4.png" alt="">
-                <div class="content">
-                    <h3>our special coffee</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, quas.</p>
-                    <span>$8.99</span>
-                </div>
-            </a>
-
-            <a href="#" class="box">
-                <img src="image/menu-5.png" alt="">
-                <div class="content">
-                    <h3>our special coffee</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, vitae.</p>
-                    <span>$8.99</span>
-                </div>
-            </a>
-
-            <a href="#" class="box">
-                <img src="image/menu-6.png" alt="">
-                <div class="content">
-                    <h3>our special coffee</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, expedita!</p>
-                    <span>$8.99</span>
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <!-- REVIEW -->
-    <section class="review" id="review">
-        <h1 class="heading">reviews <span>what people says</span></h1>
-
-        <div class="swiper review-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide box">
-                    <i class="fas fa-quote-left"></i>
-                    <i class="fas fa-quote-right"></i>
-                    <img src="image/pic-1.png" alt="">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, earum quis dolorem quaerat tenetur
-                        illum.</p>
-                    <h3>john deo</h3>
-                    <span>satisfied client</span>
-                </div>
-
-                <div class="swiper-slide box">
-                    <i class="fas fa-quote-left"></i>
-                    <i class="fas fa-quote-right"></i>
-                    <img src="image/pic-2.png" alt="">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum optio quasi ut, illo ipsam
-                        assumenda.</p>
-                    <h3>john deo</h3>
-                    <span>satisfied client</span>
-                </div>
-
-                <div class="swiper-slide box">
-                    <i class="fas fa-quote-left"></i>
-                    <i class="fas fa-quote-right"></i>
-                    <img src="image/pic-3.png" alt="">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius asperiores aliquam hic quis!
-                        Eligendi, aliquam.</p>
-                    <h3>john deo</h3>
-                    <span>satisfied client</span>
-                </div>
-
-                <div class="swiper-slide box">
-                    <i class="fas fa-quote-left"></i>
-                    <i class="fas fa-quote-right"></i>
-                    <img src="image/pic-4.png" alt="">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi modi perspiciatis distinctio
-                        velit aliquid a.</p>
-                    <h3>john deo</h3>
-                    <span>satisfied client</span>
-                </div>
+      <div class="swiper review-slider swiper-js">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <div class="card-sl">
+              <div class="card-image">
+                <img src="image/Ngejogja-Coffee.jpg" />
+              </div>
+              <div class="card-heading">Ngejogja Matcha</div>
+              <div class="card-text">
+                Matcha, Cheese cream, with Garlic bread on top
+              </div>
+              <div class="card-text price">Rp. 30.000</div>
             </div>
-            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="card-sl">
+              <div class="card-image">
+                <img src="image/Jejak-Penjelajah.jpg" />
+              </div>
+              <div class="card-heading">Jejak Penjelajah</div>
+              <div class="card-text">
+                Expresso, Fresh milk, Spice Syrup and Osmantus Liquid
+              </div>
+              <div class="card-text price">Rp. 25.000</div>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="card-sl">
+              <div class="card-image">
+                <img src="image/Irish-coffee-hot.jpg" />
+              </div>
+              <div class="card-heading">Irish Coffee Hot</div>
+              <div class="card-text">
+                Amerikano, HM Rock Candy, Vanilla Omrach Top with Whipped Cream
+                and Brown Sugar
+              </div>
+              <div class="card-text price">Rp. 60.000</div>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="card-sl">
+              <div class="card-image">
+                <img src="image/Hi-Nona-Manis.jpg" />
+              </div>
+              <div class="card-heading">Hi Nona Manis</div>
+              <div class="card-text">
+                Expresso, Papermin, Syrup, Ginger bread and Pineapple Juice
+              </div>
+              <div class="card-text price">Rp. 25.000</div>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="card-sl">
+              <div class="card-image">
+                <img src="image/Espresso-Martini.jpg" />
+              </div>
+              <div class="card-heading">Expresso Martini</div>
+              <div class="card-text">Balinise Spirit, Espresso</div>
+              <div class="card-text price">Rp. 30.000</div>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="card-sl">
+              <div class="card-image">
+                <img src="image/Coffee-Beer.jpg" />
+              </div>
+              <div class="card-heading">Coffee Baby Beer</div>
+              <div class="card-text">
+                Fermented and Inject cream, Soda (cold brew robusta, citurs,
+                herb, spices and carames)
+              </div>
+              <div class="card-text price">Rp. 30.000</div>
+            </div>
+          </div>
         </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="row justify-content-center other-menu">
+        <div class="col-lg-6 d-flex justify-content-center align-items-center">
+          <a
+            href="https://drive.google.com/file/d/1--FtqXcWzPFLoaDlYNKJMUHVtAp5r3pb/view?usp=sharing"
+            ><button class="btn btn-block">View More Menu</button></a
+          >
+        </div>
+      </div>
     </section>
 
-    <!-- BOOK -->
-    <section class="book" id="book">
-        <h1 class="heading">booking <span>reserve a table</span></h1>
+    <!-- PROMOSI -->
+    <section class="promosi" id="promosi">
+      <div class="container text-center">
+        <h1 class="heading">PROMO <span>PROMO IN KOPIUNG</span></h1>
+        <div class="row flex-row justify-content-around">
+          <div class="col-lg-4 col-md-4 box-promosi">
+            <img class="img-fluid" src="image/promotion-latte.jpg" alt="" />
+          </div>
+          <div class="col-lg-4 col-md-4 box-promosi">
+            <img class="img-fluid" src="image/win-waktu-ngeteh.jpg" alt="" />
+          </div>
+          <div class="col-lg-4 col-md-4 box-promosi">
+            <img class="img-fluid" src="image/promotion-latte.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <form action="">
-            <input type="text" placeholder="Name" class="box">
-            <input type="email" placeholder="Email" class="box">
-            <input type="number" placeholder="Number" class="box">
-            <textarea name="" placeholder="Message" class="box" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="send message" class="btn">
-        </form>
+    <!-- Catalog -->
+    <section class="review" id="galery">
+      <h1 class="heading">Catalog <span>Our Documentations</span></h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center my-2"></div>
+        </div>
+        <div class="portfolio-menu mt-2 mb-4">
+          <ul>
+            <li class="btn btn-outline-dark active" data-filter="*">All</li>
+            <li class="btn btn-outline-dark" data-filter=".drink">Drink</li>
+            <li class="btn btn-outline-dark" data-filter=".food">Food</li>
+            <li class="btn btn-outline-dark text" data-filter=".exp">
+              Experience
+            </li>
+          </ul>
+        </div>
+        <div class="portfolio-item row flex-row">
+          <div class="item exp col-lg-4 col-md-4 col-4 col-sm-4">
+            <a
+              href="image/PGA00971.jpg"
+              class="fancylight popup-btn"
+              data-fancybox-group="light"
+            >
+              <img class="img-fluid" src="image/PGA00971.jpg" alt="" />
+            </a>
+          </div>
+          <div class="item food col-lg-4 col-md-4 col-4 col-sm-4">
+            <a
+              href="image/PGA00873.jpg"
+              class="fancylight popup-btn"
+              data-fancybox-group="light"
+            >
+              <img class="img-fluid" src="image/PGA00873.jpg" alt="" />
+            </a>
+          </div>
+          <div class="item drink col-lg-4 col-md-4 col-4 col-sm-4">
+            <a
+              href="image/PGA00842.jpg"
+              class="fancylight popup-btn"
+              data-fancybox-group="light"
+            >
+              <img class="img-fluid" src="image/PGA00842.jpg" alt="" />
+            </a>
+          </div>
+          <div class="item exp col-lg-4 col-md-4 col-4 col-sm-4">
+            <a
+              href="image/PGA00968.jpg"
+              class="fancylight popup-btn"
+              data-fancybox-group="light"
+            >
+              <img class="img-fluid" src="image/PGA00968.jpg" alt="" />
+            </a>
+          </div>
+          <div class="item exp col-lg-4 col-md-4 col-4 col-sm-4">
+            <a
+              href="image/PGA00823.jpg"
+              class="fancylight popup-btn"
+              data-fancybox-group="light"
+            >
+              <img class="img-fluid" src="image/PGA00823.jpg" alt="" />
+            </a>
+          </div>
+          <div class="item exp col-lg-4 col-md-4 col-4 col-sm-4">
+            <a
+              href="image/PGA00897 (1).jpg"
+              class="fancylight popup-btn"
+              data-fancybox-group="light"
+            >
+              <img class="img-fluid" src="image/PGA00897 (1).jpg" alt="" />
+            </a>
+          </div>
+          <div class="item exp col-lg-4 col-md-4 col-4 col-sm-4">
+            <a
+              href="image/PGA01096.jpg"
+              class="fancylight popup-btn"
+              data-fancybox-group="light"
+            >
+              <img class="img-fluid" src="image/PGA01096.jpg" alt="" />
+            </a>
+          </div>
+          <div class="item exp col-lg-4 col-md-4 col-4 col-sm-4">
+            <a
+              href="image/PGA01084.jpg"
+              class="fancylight popup-btn"
+              data-fancybox-group="light"
+            >
+              <img class="img-fluid" src="image/PGA01084.jpg" alt="" />
+            </a>
+          </div>
+          <div class="item drink col-lg-4 col-md-4 col-4 col-sm-4">
+            <a
+              href="image/WhatsApp Image 2024-04-10 at 16.44.45_7da2e78f.jpg"
+              class="fancylight popup-btn"
+              data-fancybox-group="light"
+            >
+              <img
+                class="img-fluid"
+                src="image/WhatsApp Image 2024-04-10 at 16.44.45_7da2e78f.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="item food col-lg-4 col-md-4 col-4 col-sm-4">
+            <a
+              href="image/WhatsApp Image 2024-04-10 at 16.44.45_4d316fbd.jpg"
+              class="fancylight popup-btn"
+              data-fancybox-group="light"
+            >
+              <img
+                class="img-fluid"
+                src="image/WhatsApp Image 2024-04-10 at 16.44.45_4d316fbd.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="item food col-lg-4 col-md-4 col-4 col-sm-4">
+            <a
+              href="image/WhatsApp Image 2024-04-10 at 16.44.46_93263f4c.jpg"
+              class="fancylight popup-btn"
+              data-fancybox-group="light"
+            >
+              <img
+                class="img-fluid"
+                src="image/WhatsApp Image 2024-04-10 at 16.44.46_93263f4c.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="item food col-lg-4 col-md-4 col-4 col-sm-4">
+            <a
+              href="image/WhatsApp Image 2024-04-10 at 16.44.47_137204e8.jpg"
+              class="fancylight popup-btn"
+              data-fancybox-group="light"
+            >
+              <img
+                class="img-fluid"
+                src="image/WhatsApp Image 2024-04-10 at 16.44.47_137204e8.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="item food col-lg-4 col-md-4 col-4 col-sm-4">
+            <a
+              href="image/WhatsApp Image 2024-04-10 at 16.44.45_7f4e70c3.jpg"
+              class="fancylight popup-btn"
+              data-fancybox-group="light"
+            >
+              <img
+                class="img-fluid"
+                src="image/WhatsApp Image 2024-04-10 at 16.44.45_7f4e70c3.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="item food col-lg-4 col-md-4 col-4 col-sm-4">
+            <a
+              href="image/WhatsApp Image 2024-04-10 at 16.44.47_2ab228fb.jpg"
+              class="fancylight popup-btn"
+              data-fancybox-group="light"
+            >
+              <img
+                class="img-fluid"
+                src="image/WhatsApp Image 2024-04-10 at 16.44.47_2ab228fb.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="item drink col-lg-4 col-md-4 col-4 col-sm-4">
+            <a
+              href="image/PGA00932.jpg"
+              class="fancylight popup-btn"
+              data-fancybox-group="light"
+            >
+              <img class="img-fluid" src="image/PGA00932.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="book" id="contact">
+      <h1 class="heading">FORM CONTACT <span>CONTACT US</span></h1>
+      <div class="container">
+        <div class="row box-contact">
+          <div class="col-lg-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.101993256217!2d115.21279847464098!3d-8.681850388405387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd24121134ee30b%3A0x975ea5444928eebf!2sKopiUNG!5e0!3m2!1sid!2sid!4v1711996206641!5m2!1sid!2sid"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="col-lg-6">
+            <form
+              action="https://formspree.io/f/mgegrrwg"
+              method="post"
+              id="contact-form"
+            >
+              <input type="text" placeholder="Name" class="box" name="name" />
+              <input
+                type="email"
+                placeholder="Email"
+                class="box"
+                name="email"
+              />
+              <input
+                type="number"
+                placeholder="Number"
+                class="box"
+                name="number"
+              />
+              <textarea
+                name="message"
+                placeholder="Message"
+                class="box"
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+              <input type="submit" value="send message" class="btn" />
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- FOOTER -->
     <section class="footer">
-        <div class="box-container">
-            <div class="box">
-                <h3>our branches</h3>
-                <a href="#"><i class="fas fa-arrow-right"></i> india</a>
-                <a href="#"><i class="fas fa-arrow-right"></i> USA</a>
-                <a href="#"><i class="fas fa-arrow-right"></i> france</a>
-                <a href="#"><i class="fas fa-arrow-right"></i> africa</a>
-                <a href="#"><i class="fas fa-arrow-right"></i> japan</a>
-            </div>
-
-            <div class="box">
-                <h3>quick links</h3>
-                <a href="#home"><i class="fas fa-arrow-right"></i> home</a>
-                <a href="#about"><i class="fas fa-arrow-right"></i> about</a>
-                <a href="#menu"><i class="fas fa-arrow-right"></i> menu</a>
-                <a href="#review"><i class="fas fa-arrow-right"></i> review</a>
-                <a href="#book"><i class="fas fa-arrow-right"></i> book</a>
-            </div>
-
-            <div class="box">
-                <h3>contact info</h3>
-                <a href="#"><i class="fas fa-phone"></i> +123-456-7890</a>
-                <a href="#"><i class="fas fa-phone"></i> +111-222-3333</a>
-                <a href="#"><i class="fas fa-envelope"></i> coffee@gmail.com</a>
-                <a href="#"><i class="fas fa-envelope"></i> Perú, Lima</a>
-            </div>
-
-            <div class="box">
-                <h3>contact info</h3>
-                <a href="#"><i class="fab fa-facebook-f"></i> facebook</a>
-                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
-                <a href="#"><i class="fab fa-instagram"></i> instagram</a>
-                <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
-                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
-            </div>
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#home"><i class="fas fa-arrow-right"></i> home</a>
+          <a href="#about"><i class="fas fa-arrow-right"></i> about</a>
+          <a href="#menu"><i class="fas fa-arrow-right"></i> menu</a>
+          <a href="#galery"><i class="fas fa-arrow-right"></i> galery</a>
+          <a href="#contact"><i class="fas fa-arrow-right"></i> contact</a>
         </div>
 
-        <div class="credit">created by <span>mr. web designer</span> | all rights reserved</div>
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="https://wa.me/6281238336149/?text=Hallo+admin"
+            ><i class="fas fa-phone"></i> +62 812-3833-6149</a
+          >
+          <a href="mailto:kopiung19@gmail.com"
+            ><i class="fas fa-envelope"></i> kopiung19@gmail.com</a
+          >
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="https://www.instagram.com/kopi_ung19/?hl=id"
+            ><i class="fab fa-instagram"></i> instagram</a
+          >
+          <a href="https://www.tiktok.com/@kopiung"
+            ><i class="fab fa-tiktok"></i> tik tok</a
+          >
+        </div>
+      </div>
+
+      <div class="credit">
+        created by <span>kopiUNG</span> | all rights reserved
+      </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- SWIPER -->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- animasi whatsapp -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
     <!-- Custom JS File Link  -->
     <script src="js/script.js"></script>
+    <script>
+      // swiper
+      var swiper = new Swiper(".swiper-js", {
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop: true,
+        grabCursor: true,
+        autoplay: {
+          delay: 7500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 2,
+          },
+          576: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          992: {
+            slidesPerView: 4, // Tampilkan 4 kolom pada ukuran layar yang lebih besar dari 992px
+          },
+        },
+      });
 
-</body>
+      $(document).ready(function () {
+        // Menampilkan tombol WhatsApp dengan efek animasi
+        $("#whatsapp-button").hide().delay(1000).fadeIn(500);
+      });
 
+      // navbar scroll
+      window.addEventListener("scroll", function () {
+        var navbar = document.querySelector("header"); // Menemukan elemen navbar
+        var scrollPosition = window.scrollY; // Mendapatkan posisi scroll vertikal
+
+        // Tentukan threshold scroll tertentu (misalnya 100 piksel)
+        if (scrollPosition > 100) {
+          navbar.classList.add("navbar-scrolled"); // Tambahkan kelas navbar-scrolled
+        } else {
+          navbar.classList.remove("navbar-scrolled"); // Hapus kelas navbar-scrolled
+        }
+      });
+
+      // contact form
+      const contactForm = document.getElementById("contact-form");
+
+      contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const url = e.target.action;
+        const formData = new FormData(contactForm);
+
+        fetch(url, {
+          method: "POST",
+          body: formData,
+          mode: "no-cors",
+        })
+          .then(() => {
+            window.location.href = ".css/../index.html";
+          })
+          .catch((e) => alert("Error occured"));
+      });
+
+      $(".portfolio-menu ul li").click(function () {
+        $(".portfolio-menu ul li").removeClass("active");
+        $(this).addClass("active");
+
+        var selector = $(this).attr("data-filter");
+        $(".portfolio-item").isotope({
+          filter: selector,
+        });
+        return false;
+      });
+      $(document).ready(function () {
+        var popup_btn = $(".popup-btn");
+        popup_btn.magnificPopup({
+          type: "image",
+          gallery: {
+            enabled: true,
+          },
+        });
+      });
+    </script>
+  </body>
 </html>
