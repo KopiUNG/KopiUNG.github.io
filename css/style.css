@@ -502,9 +502,11 @@ section {
 }
 
 .footer .box-container .box h3 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding: 1rem 0;
     color: var(--main-color);
+    font-family: 'bethland';
+
 }
 
 .footer .box-container .box a {
@@ -523,6 +525,7 @@ section {
 }
 
 .footer .credit {
+    font-family: 'bethland';
     text-align: center;
     font-size: 2rem;
     padding: 2rem 1rem;
@@ -532,6 +535,17 @@ section {
 
 .footer .credit span {
     border-bottom: var(--border-hover);
+}
+@media (max-width: 467px) {
+    .footer .box-container .box h3 {
+        font-size: 3.5rem;
+    
+    }
+    .footer .box-container .box a {
+
+        font-size: 2rem;
+
+    }
 }
 
 
@@ -557,11 +571,11 @@ section {
 
 @media (max-width: 768px) {
     .heading {
-        font-size: 6rem;
+        font-size: 8rem;
     }
 
     .heading span {
-        font-size: 2.3rem;
+        font-size: 3.5rem;
     }
  
     #menu-btn {
