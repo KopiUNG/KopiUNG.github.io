@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/bethland');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 :root {
     --main-color: #673B23;
     --border-radius: 10px;
@@ -9,7 +9,7 @@
 }
 
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -40,6 +40,7 @@ section {
     text-align: center;
     pointer-events: none;
     position: relative;
+    font-family: 'bethland';
 }
 
 .heading span {
@@ -49,7 +50,8 @@ section {
     transform: translate(-50%, -50%);
     width: 100%;
     color: var(--main-color);
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-family: 'bethland';
 }
 
 .btn {
@@ -62,6 +64,10 @@ section {
     cursor: pointer;
     margin-top: 1rem;
     font-size: 1.7rem;
+}
+
+.visit{
+    font-family: 'bethland';
 }
 
 .btn:hover {
@@ -81,6 +87,7 @@ section {
     justify-content: space-between;
     z-index: 1000;
     padding: 2rem 9%;
+    
 }
 
 .navbar-scrolled{
@@ -111,9 +118,11 @@ section {
 
 .header .navbar a {
     margin: 0 1rem;
-    font-size: 1.7rem;
+    font-size: 2.2rem;
     text-decoration: none;
     color: var(--main-color);
+    font-family: 'bethland';
+
 }
 
 .header .logo img{
@@ -160,7 +169,7 @@ section {
 
 .home .row  p {
     color: var(--main-color);
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1.8;
     padding: 1rem 0;
 }
@@ -200,6 +209,7 @@ section {
     font-size: 6.5rem;
     color: var(--main-color);
     text-transform: uppercase;
+    font-family: 'bethland';
 }
 
 .home .image-slider {
@@ -273,16 +283,16 @@ section {
 .about .row .content {
     flex: 1 1 42rem;
 }
-
 .about .row .content .title {
     color: var(--main-color);
-    font-size: 3rem;
+    font-family: 'bethland';
+    font-size: 4rem;
     line-height: 1.8;
 }
 
 .about .row .content p {
     color: var(--main-color);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: 1.8;
     padding: 1rem 0;
 }
@@ -360,7 +370,10 @@ section {
 .menu .card-sl .price{
     font-weight: bold;
 }
-
+.other-menu a .btn{
+    font-family: 'bethland';
+    font-size:20px;
+}
 
 @media (max-width: 768px) {
     .menu .card-sl .card-heading{
@@ -401,6 +414,7 @@ section {
 .promosi .container .row{
     margin-top: 50px;
 }
+
 
 .promosi .container .row .box-promosi{
     margin: 10px 0;
@@ -597,7 +611,7 @@ section {
         font-size: 50%;
     }
     .header .navbar a {
-        font-size: 2rem;
+        font-size: 2.5rem;
 
     }
     .home .row .image img {
