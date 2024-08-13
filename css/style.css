@@ -240,7 +240,7 @@ section {
 
 .about .row .image iframe {
     width: 100%;
-    animation: aboutImage 4s linear infinite;
+    animation: aboutImageS  4s linear infinite;
 
 }
 .about .row .image-profil img{
@@ -264,7 +264,19 @@ section {
 
 }
 
+@keyframes aboutImageS {
 
+    0%,
+    100% {
+        transform: scale(.9);
+        border-radius: 20px;
+    }
+
+    50% {
+        transform: scale(.8);
+        border-radius: 20px;
+    }
+}
 @keyframes aboutImage {
 
     0%,
@@ -443,7 +455,6 @@ section {
 .portfolio-item .item{
 	float:left;
     margin-bottom: 10px;    
-
 }
 
 
