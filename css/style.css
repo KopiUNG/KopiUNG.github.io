@@ -645,3 +645,7 @@ section {
 
 }
 
+.header .navbar .active{
+    color: #709e34;
+    font-weight: bold;
+}
