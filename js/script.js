@@ -1,10 +1,6 @@
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.navbar');
-let navbarhome = document.querySelector('.menu-home');
-let navbarabout = document.querySelector('.menu-about');
-let navbarmenu = document.querySelector('.menu-menu');
-let navbargalery = document.querySelector('.menu-galery');
-let navbarcontact = document.querySelector('.menu-contact');
+
 
 menu.onclick = () => {
     menu.classList.toggle('fa-times');
@@ -17,44 +13,6 @@ window.onscroll = () => {
 };
 //focus
 
-navbarhome.onclick = () => {
-    navbarhome.classList.add('active');
-    navbarabout.classList.remove('active');
-    navbarmenu.classList.remove('active');
-    navbargalery.classList.remove('active');
-    navbarcontact.classList.remove('active');
-};
-navbarabout.onclick = () => {
-    navbarabout.classList.add('active');
-    navbarhome.classList.remove('active');
-    navbarmenu.classList.remove('active');
-    navbargalery.classList.remove('active');
-    navbarcontact.classList.remove('active');
-};
-navbarmenu.onclick = () => {
-    navbarmenu.classList.add('active');
-    navbarhome.classList.remove('active');
-    navbarabout.classList.remove('active');
-    navbargalery.classList.remove('active');
-    navbarcontact.classList.remove('active');
-};
-
-navbargalery.onclick = () => {
-    navbargalery.classList.add('active');
-    navbarhome.classList.remove('active');
-    navbarmenu.classList.remove('active');
-    navbarabout.classList.remove('active');
-    navbarcontact.classList.remove('active');
-};
-
-navbarcontact.onclick = () => {
-    navbarcontact.classList.add('active');
-    navbarhome.classList.remove('active');
-    navbarmenu.classList.remove('active');
-    navbargalery.classList.remove('active');
-    navbarabout.classList.remove('active');
-};
-
 
 document.querySelectorAll('.image-slider img').forEach(images => {
     images.onclick = () => {
@@ -62,4 +20,50 @@ document.querySelectorAll('.image-slider img').forEach(images => {
         document.querySelector('.main-home-image').src = src;
     };
 });
+
+
+window.addEventListener("scroll", function () {
+    var navbarhome = document.querySelector('.menu-home');
+var navbarabout = document.querySelector('.menu-about');
+var navbarmenu = document.querySelector('.menu-menu');
+var navbargalery = document.querySelector('.menu-galery');
+var navbarcontact = document.querySelector('.menu-contact');
+    var scrollPosition = window.scrollY; // Mendapatkan posisi scroll vertikal
+
+    // Tentukan threshold scroll tertentu (misalnya 100 piksel)
+    if (scrollPosition > 0 && scrollPosition < 700) {
+        navbarmenu.classList.remove("active");
+        navbarabout.classList.remove("active");
+        navbargalery.classList.remove("active")
+        navbarcontact.classList.remove("active");
+      navbarhome.classList.add("active");
+    }
+    else if (scrollPosition > 700 && scrollPosition < 1490) {
+        navbarmenu.classList.remove("active");
+      navbargalery.classList.remove("active");
+      navbarcontact.classList.remove("active");
+      navbarhome.classList.remove("active");
+      navbarabout.classList.add("active"); // Tambahkan kelas navbar-scrolled
+    } else if(scrollPosition > 1490 && scrollPosition < 2850) {
+        navbargalery.classList.remove("active");
+        navbarabout.classList.remove("active");
+        navbarcontact.classList.remove("active")
+        navbarhome.classList.remove("active");
+      navbarmenu.classList.add("active"); // Hapus kelas navbar-scrolled
+      
+    }else if(scrollPosition > 2850 && scrollPosition < 4560){
+        navbarmenu.classList.remove("active");
+        navbarabout.classList.remove("active");
+        navbarcontact.classList.remove("active");
+        navbarhome.classList.remove("active");
+      navbargalery.classList.add("active");
+    }
+    else if(scrollPosition > 4560){
+        navbarmenu.classList.remove("active");
+        navbarabout.classList.remove("active");
+        navbargalery.classList.remove("active");
+        navbarhome.classList.remove("active");
+      navbarcontact.classList.add("active");
+    }
+  });
 
